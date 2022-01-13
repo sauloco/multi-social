@@ -27,6 +27,8 @@ export default Vue.extend({
     const nodes = []
 
     for (const [service, data] of Object.entries(handles)) {
+
+      // @ts-ignore
       const serviceHandler = services[service];
       if (serviceHandler) {
         const result = await serviceHandler(data)
