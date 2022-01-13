@@ -4,7 +4,7 @@
       <embed-twitter
         v-if="node.type === 'twitter'"
         :tweet="node"
-        :user="user"
+        :user="handles.twitter"
         :with-label="index === 0 || nodes[index-1].type !== node.type"
       />
 
@@ -41,7 +41,7 @@ export default {
       required: true,
       default: () => [],
     },
-    user: {
+    handles: {
       type: Object,
       required: true,
       default: () => {},

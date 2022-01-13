@@ -3,9 +3,8 @@
     <p lang="es" dir="ltr">
       {{ tweet.text }}
     </p>
-    &mdash; {{ user.name }} (@{{ user.username }})
     <a
-      :href="`https://twitter.com/${user.username}/status/${tweet.id}`"
+      :href="`https://twitter.com/${user}/status/${tweet.id}`"
       >January 11, 2022</a
     >
   </blockquote>
@@ -20,9 +19,8 @@ export default {
       default: () => {},
     },
     user: {
-      type: Object,
+      type: String,
       required: true,
-      default: () => {},
     },
   }
 }

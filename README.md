@@ -66,3 +66,11 @@ More information about the usage of this directory in [the documentation](https:
 This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+
+### Usage
+
+Demo: https://multisocial.netlify.app/[username]/?twitter=nasa&github=nasa&linkedin=nasa&instagram=nasa&facebook=nasa&youtube=nasa&youtubeId=UCLA_DiR1FfKNvjuUpBHmylQ&pinterest=nasa&tumblr=nasa&tiktok=nasa
+
+All parameters are optional, username param will be used for all social network not added in the query.
+
+At this moment only Twitter, Instagram and Youtube are supported. Tiktok and facebook are the next ones to be added.
