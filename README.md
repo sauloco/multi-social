@@ -69,7 +69,11 @@ More information about the usage of this directory in [the documentation](https:
 
 ### Usage
 
-Demo: https://multisocial.netlify.app/[username]/?twitter=nasa&github=nasa&linkedin=nasa&instagram=nasa&facebook=nasa&youtube=nasa&youtubeId=UCLA_DiR1FfKNvjuUpBHmylQ&pinterest=nasa&tumblr=nasa&tiktok=nasa
+Demos:
+
+Dynamic Mode for demos only: https://multisocial.netlify.app/[username]/?twitter=nasa&github=nasa&linkedin=nasa&instagram=nasa&facebook=nasa&youtube=nasa&youtubeId=UCLA_DiR1FfKNvjuUpBHmylQ&pinterest=nasa&tumblr=nasa&tiktok=nasa
+
+Static Mode: https://multisocial.netlify.app/nasa
 
 All parameters are optional, username param will be used for all social network not added in the query.
 
