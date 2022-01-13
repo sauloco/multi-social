@@ -14,11 +14,14 @@ export default async (username: String) => {
     `users/by/username/${username}`
   )
 
-  const {
-    data: { data: tweets },
-  } = await twitter.get(
+  const response = await twitter.get(
     `/users/${user.id}/tweets?max_results=20&tweet.fields=created_at`
   )
+  const { data: tweets, meta } = response.data;
+
+  if (!meta.result_count) {
+    return [];
+  }
   // @ts-ignore
   return tweets.map((node) => ({
     ...node,

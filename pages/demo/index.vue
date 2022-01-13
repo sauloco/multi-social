@@ -26,6 +26,10 @@ export default Vue.extend({
   },
   async asyncData({ query }) {
     const { profile }: { profile?: string | (string | null)[] } = query
+
+    if (!profile) {
+      return {}
+    }
     // @ts-ignore
     const { handles } = await getHandles(profile, query)
 

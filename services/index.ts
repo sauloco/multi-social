@@ -8,7 +8,7 @@ export const services = {
   youtube,
   twitter,
   instagram,
-  tiktok,
+  // tiktok,
 }
 
 export function getHandles(profile: String, extras: any) {

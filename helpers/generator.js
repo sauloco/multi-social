@@ -5,7 +5,7 @@
 //   baseURL: process.env.STRAPI_URL,
 // })
 
-const PROFILES = ['nasa', 'google', 'facebook', 'twitter']
+const PROFILES = ['nasa', 'google', 'nike', 'twitter', 'apple', 'microsoft']
 
 export default function () {
   const routes = []
