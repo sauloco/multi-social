@@ -19,6 +19,7 @@
         :node="node"
         :with-label="index === 0 || nodes[index-1].type !== node.type"
       />
+      
     </div>
   </div>
 </template>
